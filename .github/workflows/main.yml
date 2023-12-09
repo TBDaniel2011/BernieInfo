@@ -1,0 +1,15 @@
+name: Download Installer
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  download-installer:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Download Installer
+      run: |
+        wget https://github.com/TBDaniel2011/bernieinfo/releases/download/bernieinfo3.0/BSS-info-install1.3.msi -O installer.msi
