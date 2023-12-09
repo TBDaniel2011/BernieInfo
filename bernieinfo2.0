@@ -1,0 +1,40 @@
+import datetime
+
+def display_welcome_message():
+    print("------------------------------------------------")
+    print("            Bernie Info System")
+    print("------------------------------------------------")
+    print("Üdvözöllek!")
+
+def display_current_date_time():
+    current_datetime = datetime.datetime.now()
+    date_format = "%Y.%m.%d"
+    time_format = "%H:%M"
+    formatted_date = current_datetime.strftime(date_format)
+    formatted_time = current_datetime.strftime(time_format)
+
+    print(f"Ma a {formatted_date} dátumot és a {formatted_time} időpontot jelenítjük meg.")
+
+def display_menu():
+    print("\nA következő opciók közül választhatsz:")
+    print("1. info")
+    choice = input("Válassz egy opciót: ")
+    return choice
+
+def listazas():
+    print("Szoftverünk fejlesztés alatt áll Kérlek látogatsd meg a help.berniestory.com-ot Nincs automatikus frissítés")
+
+def main():
+    display_welcome_message()
+    display_current_date_time()
+
+    while True:
+        choice = display_menu()
+
+        if choice == '1':
+            listazas()
+        else:
+            print("Hibás választás. Kérlek válassz egy érvényes opciót.")
+
+if __name__ == "__main__":
+    main()
