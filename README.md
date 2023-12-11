@@ -1,1 +1,1 @@
-Hi my name is Barnus and I am the deplover of this program. :)
+Hi my name is Barnus and I am the deveplover of this program. :)
